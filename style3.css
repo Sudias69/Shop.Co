@@ -1,0 +1,172 @@
+:root{
+    --font-display:'League Spartan';
+    --weight-display:900;
+    --bg-black:black;
+    --color-white: #ffffff;
+    --font-regular:'Satoshi';
+    --weight-regular:400;
+    --bg-gray:rgba(242, 240, 241, 1);
+    --card-bg:rgba(240, 238, 237, 1);
+    --para-color: rgba(0, 0, 0, 0.6);
+     --color-black: #000000;
+  
+
+}
+body{
+    background: var(--color-white);
+    overflow-x: hidden;
+    font-family: var(--font-regular);
+}
+.cart-heading h1{
+    font-size: 40px;
+    font-weight: var(--weight-display);
+    line-height: 100%;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+}
+.cart-card{
+    padding: 20px 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cart-items{
+    display: flex;
+    gap: 12px;
+}
+.cart-img{
+    width: 124px;
+    height: 124px;
+    border-radius: 10px;
+}
+.cart-content{
+    width: 100%;
+}
+.ci-1{
+    background: url(images/shirts/shirt5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ci-2{
+    background: url(images/Home-images/pic3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ci-3{
+    background: url(images/Home-images/pic2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cc-head h2{
+   font-size: 20px; 
+   font-weight: 700;
+   line-height: 100%;
+}
+.cart-content p{
+    color: black;
+    font-size: 14px;
+    font-weight: var(--weight-regular);
+}
+.cart-content p span{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-weight: var(--weight-regular);
+}
+.quant-btn{
+    padding: 10px 18px ;
+    font-size: 14px;
+    gap: 20px;
+}
+.order-summary h2{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.sub-total span{
+    font-size: 20px;
+    color: var(--para-color);
+    font-weight: var(--weight-regular);
+    line-height: 100%;
+}
+.sub-total span.t-price{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    color: black;
+}
+.cart-btns{
+    gap: 10px;
+}
+.promo-btn{
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+    gap: 12px;
+    background: var(--bg-gray);
+    border-radius: 62px;
+    width: 70%;
+    font-size: 14px;
+    cursor: pointer;
+}
+.apply-btn{
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    border-radius: 62px;
+    width: 30%;
+    font-size: 14px;
+    cursor: pointer;
+}
+.checkout-btn{
+    padding: 16px 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 12px;
+    background: black;
+    border-radius: 62px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media screen and (max-width:860px) {
+.site-footer{
+    margin-top: 190px;
+}  
+.newsletter-box{
+    top: -45%;
+}  
+}
+@media screen and (max-width:780px) {
+   .newsletter-box{
+    top: -30%;
+}     
+}
+@media screen and (max-width:570px) {
+ .cart-img{
+    width: 100px;
+    height: 100px;
+ } 
+ .cc-head h2{
+    font-size: 16px;
+ }   
+ .price-current{
+    font-size: 20px;
+ }
+ .quant-btn{
+    padding: 8px 16px ;
+    gap: 16px
+    ;
+ }
+ .cart-heading h1 {
+    font-size: 32px;
+ }
+}

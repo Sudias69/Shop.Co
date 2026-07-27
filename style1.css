@@ -1,0 +1,372 @@
+
+:root{
+    --font-display:'League Spartan';
+    --weight-display:900;
+    --bg-black:black;
+    --color-white: #ffffff;
+    --font-regular:'Satoshi';
+    --weight-regular:400;
+    --bg-gray:rgba(242, 240, 241, 1);
+    --card-bg:rgba(240, 238, 237, 1);
+    --para-color: rgba(0, 0, 0, 0.6);
+     --color-black: #000000;
+  
+
+}
+body{
+    background: var(--color-white);
+    overflow-x: hidden;
+    font-family: var(--font-regular);
+}
+
+span.disabled{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: var(--font-regular);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+}
+span.disabled i{
+   color: rgba(0, 0, 0, 0.6); 
+}
+span.active{
+    color: var(--color-black);
+      font-family: var(--font-regular);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+}
+.shirts-images{
+    justify-items: center;
+    gap: 20px;
+}
+.shirts-sample{
+    gap: 14px;
+}
+.sample-box{
+    width: 152px;
+   height: 162px;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+.sm-1{
+    background: url(images/shirts/shirt1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+}
+.sm-2{
+    background: url(images/shirts/shirt2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sm-3{
+    background: url(images/shirts/shirt3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shirt-display{
+    background: url(images/shirts/shirt1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 500px;
+    height: 514px;
+}
+.shirt-detail h1{
+    font-family: var(--font-display);
+    font-weight: var(--weight-display);
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.shirt-detail p{
+    font-family: var(--font-regular);
+    color: var(--para-color);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+    line-height: 150%;
+   
+}
+.product-rating1 img{
+    width: 140px;
+}
+.product-rating1 {
+   font-size: 16px;
+   gap: 12px;
+}
+.price-current1,.price-original1{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--font-regular);
+    
+}
+.price-original1{
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: line-through;
+}
+.discount-badge1{
+    font-size: 16px;
+}
+span.color-selection,span.size-selection{
+    color: var(--para-color);
+    font-size: 16px;
+    
+}
+.colors-bar{
+    display: flex;
+    gap: 16px;
+}
+.cbar{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+.cbar1{
+    background-color: rgba(79, 70, 49, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cbar1 i{
+    font-size: 16px;
+    color: white;
+}
+.cbar2{
+    background-color: rgba(49, 79, 74, 1);
+}
+.cbar3{
+    background-color: rgba(49, 52, 79, 1);
+}
+.sizes{
+  display: flex;
+  gap:16px;
+
+}
+.size-disable{
+    padding: 12px 24px;
+    background: var(--bg-gray);
+    font-size: 16px;
+    color: var(--para-color);
+    border-radius: 62px;
+}
+.size-active{
+    padding: 12px 24px;
+    background:var(--color-black);
+    font-size: 16px;
+    color: var(--color-white);
+    border-radius: 62px;
+}
+.shirt-quantity{
+    display: flex;
+    
+    gap: 16px;
+}
+.quant-btn{
+    display: flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 16px;
+    color: black;
+    background: var(--bg-gray);
+    border: none;
+    border-radius: 62px;
+}
+.quant-btn i{
+ font-size: 16px;
+ color: black;
+}
+.cart-btn{
+    border-radius: 62px;
+    border: none;
+    padding: 16px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+.cart-btn:hover{
+    background: var(--bg-gray);
+    color: black;
+}
+.customer-review{
+    margin-top: 80px;
+}
+
+.revhead-dis{
+    font-size: 20px;
+    font-weight: var(--weight-regular);
+    line-height: 22px;
+    color: var(--para-color);
+}
+.revhead-acti{
+    font-size: 20px;
+    font-weight: var(--weight-regular);
+    line-height: 22px;
+    color: var(--color-black);
+}
+.review-heading h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--font-regular);
+    line-height: 100%;
+}
+.review-heading h2 span{
+    font-size: 16px;
+    font-weight: var(--weight-regular);
+    font-family: var(--font-regular);
+    line-height: 100%;
+    padding-left: 8px;
+    color: var(--para-color);
+}
+.review-filters{
+    display: flex;
+    gap: 10px;
+}
+.filter-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--bg-gray);
+    border-radius: 62px;
+}
+.latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--bg-gray);
+    border-radius: 62px;
+    gap: 8px;
+    font-size: 16px;
+    border: none;
+}
+.wr-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--color-black);
+    border-radius: 62px;
+    font-size: 16px;
+    color: white; 
+}
+.review-card:hover{
+    transform: translateY(-1.1px);
+}
+.stars-head i{
+    color: var(--para-color);
+    font-size: 20px;
+}
+.review-card p{
+    max-width: 550px;
+}
+.review-date{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--para-color);
+}
+.btn-review{
+    padding: 16px 54px;
+    border-radius: 62px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3 ease;
+}
+.btn-review:hover{
+    background: black;
+    color: white;
+}
+.product-price .price-current{
+    font-size: 24px;
+} 
+.product-price .price-original{
+    font-size: 24px;
+} 
+.site-footer{
+    margin-top: 150px;
+}
+
+@media screen and (max-width:860px) {
+    .rev-cc2{
+        min-height: 380px;
+    }
+    .newsletter-box {
+        top: -35%;
+    }
+}
+@media screen and (max-width:570px) {
+    .shirts-images{
+        flex-direction: column-reverse;
+    }
+    .shirt-display{
+        width: 100%;
+    }
+    .shirt-detail h1{
+        max-width: 226px;
+        font-size: 24px;
+    }
+    .price-current1, .price-original1 {
+        font-size: 24px;
+    }
+    .discount-badge1{
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    .shirt-detail p{
+        font-size: 14px;
+        
+    }
+    .size-disable,.size-active {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .sizes{
+        gap: 12px;
+        
+        flex-wrap: wrap;
+    }
+    .quant-btn,.cart-btn{
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+    .revhead-dis,.revhead-acti{
+        font-size: 16px;
+    }
+    .latest-btn {
+        display: none;
+    }
+    .review-heading h2{
+        font-size: 20px;
+    }
+    .review-heading h2 span{
+        font-size: 14px;
+    }
+    .filter-icon,.wr-btn{
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    .filter-icon img{
+        width: 20px;
+        height: 20px;
+    }
+        .rev-cc2{
+            min-height: 300px;
+        }
+        .rev-ccc{
+            display: none;
+        }
+            .shirt-card-title {
+                max-width: 184px;
+                margin: 0 auto;
+            }
+}

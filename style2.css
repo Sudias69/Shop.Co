@@ -1,0 +1,236 @@
+:root{
+    --font-display:'League Spartan';
+    --weight-display:900;
+    --bg-black:black;
+    --color-white: #ffffff;
+    --font-regular:'Satoshi';
+    --weight-regular:400;
+    --bg-gray:rgba(242, 240, 241, 1);
+    --card-bg:rgba(240, 238, 237, 1);
+    --para-color: rgba(0, 0, 0, 0.6);
+     --color-black: #000000;
+  
+
+}
+body{
+    background: var(--color-white);
+    overflow-x: hidden;
+    font-family: var(--font-regular);
+}
+
+.filter{
+    padding: 20px 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    position: sticky;
+    top: 60px;
+}
+.f-head h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+}
+.cl-item span{
+    font-size: 16px;
+    font-weight: var(--weight-regular);
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.6);
+}
+.cl-item i{
+     color: rgba(0, 0, 0, 0.6); 
+}
+.range-box {
+      position: relative;
+      height: 40px;
+    }
+
+    .range-track {
+      width: 100%;
+      height: 6px;
+      background: rgba(240, 240, 240, 1);
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .range-active {
+      position: absolute;
+      left: 15%;
+      width: 55%;
+      height: 6px;
+      background: black;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .thumb {
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .thumb.left {
+      left: 15%;
+    }
+
+    .thumb.right {
+      right: 30%;
+    }
+
+    .price-text {
+      position: relative;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .pr-1{
+        position: absolute;
+        left: 15%;
+    }
+    .pr-2{
+        left: 60%;
+        position: absolute;
+    }
+    .f-colors,.f-sizes{
+        gap: 10px;
+    }
+    .f-colors span{
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .f-sizes span{
+     padding: 10px 20px;   
+     background: var(--bg-gray);
+     font-size: 14px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: var(--weight-regular);
+     border-radius: 62px;
+     color: rgba(0, 0, 0, 0.6);
+    }
+    .f-sizes span.size-active{
+        background: black;
+        color: white;
+    }
+    .filter-btn{
+        background: black;
+    }
+    .cp-heading h2{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 100%;
+    }
+    .cp-heading p,.cp-heading p span{
+        font-size: 16px;
+        font-weight: var(--weight-regular);
+        line-height: 100%;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .cp-heading p span strong{
+        color: #000000;
+
+    }
+.fil-icon{
+    display: none;
+}
+.casual-products article{
+    max-width: 298px;
+    width: 100%;
+}
+.casual-products{
+    column-gap: 32px;
+    row-gap: 44px;
+}
+.page-btn{
+    padding: 8px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page-numbers{
+    display: flex;
+    gap: 4px;
+}
+.page-numbers span{
+    color: rgba(0, 0, 0, 0.5);
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: var(--weight-regular);
+    border-radius: 8px;
+}
+.filter-icon{
+    display: none;
+}
+.page-numbers span.active{
+    background: var(--bg-gray);
+}
+@media screen and (max-width:760px) {
+      
+       .casual-products article{
+        max-width: 230px;
+       }
+}
+@media screen and (max-width:570px) {
+     .cp-heading p span{
+        display: none;
+     } 
+     .fil-icon{
+        display: block;
+     }
+     .filter-icon{
+    display: block;
+} 
+.casual-products article{
+        max-width: 180px;
+        min-height: 300px;
+       }
+       
+       .product-name{
+        font-size: 16px;
+        white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+        width: 155px;
+       }
+       .cp-heading h2 {
+        font-size: 24px;
+       }
+       .cp-heading p{
+        font-size: 14px;
+       }
+       .product-price .price-current,.product-price .price-original {
+        font-size: 20px;
+       }
+       .casual-products{
+        row-gap: 24px;
+        column-gap: 24px;
+       }
+}
+@media screen and (max-width:390px) {
+
+.casual-products article{
+        max-width: 140px;
+        min-height: 270px;
+       }
+       .hide-page{
+        display: none;
+       }
+           .newsletter-box{
+            top: -30%;
+           }
+
+}
